@@ -23,6 +23,9 @@ html {
 .sidebar {
   background-color: #1992d4;
   grid-row: 1 / 3;
+  display: grid;
+  align-content: start;
+  gap: 50px;
 }
 
 .header {

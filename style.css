@@ -12,3 +12,22 @@
 html {
   font-family: "roboto", sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1992d4;
+  grid-row: 1 / 3;
+}
+
+.header {
+}
+
+.main-content {
+  background-color: #e2e8f0;
+}

@@ -1,6 +1,13 @@
 @font-face {
   font-family: "roboto";
-  src: url("./fonts/Roboto-Regular.ttf")
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Bold.ttf");
+  font-weight: bold;
 }
 
 * {
@@ -11,6 +18,15 @@
 
 html {
   font-family: "roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -26,9 +42,46 @@ html {
   display: grid;
   align-content: start;
   gap: 50px;
+  color: white;
+  padding: 1.2rem;
+  font-weight: bold;
 }
 
-.header {
+.branding {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  fill: white;
+  width: 3rem;
+  justify-self: center;
+}
+
+.logo-text {
+  font-size: 1.7rem;
+  justify-self: start;
+}
+
+.nav {
+  display: grid;
+  gap: 15px;
+}
+
+.nav li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.4rem;
+}
+
+.icon {
+  fill: white;
+  width: 1.6rem;
+  justify-self: center;
 }
 
 .main-content {

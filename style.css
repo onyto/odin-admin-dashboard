@@ -79,8 +79,11 @@ ul {
 }
 
 .icon {
-  fill: white;
   width: 1.6rem;
+}
+
+.icon-sidebar {
+  fill: white;
   justify-self: center;
 }
 
@@ -114,10 +117,6 @@ ul {
 
 .header-bottom > .header-right {
   margin-right: 25px;
-}
-
-.icon-header {
-  width: 1.6rem;
 }
 
 .profile-1 {
@@ -162,4 +161,119 @@ ul {
 
 .main-content {
   background-color: #e2e8f0;
+  box-shadow: inset 0 5px 10px -10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px 20px 50px 20px;
+  gap: 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.title {
+  align-self: end;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px grey;
+  display: grid;
+}
+
+.p-card {
+  border-left: 8px solid #f0b429;
+  padding: 25px;
+  gap: 10px;
+}
+
+.p-card p {
+  color: #5e5e5e;
+}
+
+.icon-row {
+  align-self: end;
+  justify-self: end;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 25px;
+}
+
+.side {
+  display: grid;
+  gap: 30px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: auto 1fr; 
+}
+
+.a-card {
+  padding: 0 20px;
+  align-items: center;
+}
+
+.a-card p {
+  color: #5e5e5e;
+  font-size: 0.8rem;
+}
+
+.sep {
+  border-top: 1px solid #5e5e5e;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.t-card {
+  padding: 0 20px;
+  align-items: center;
+}
+
+.accounts {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+}
+
+.accounts svg {
+  margin-right: 10px;
+}
+
+.t-card .profile-1,
+.profile-2,
+.profile-3,
+.profile-4 {
+  width: 2.8rem;
+}
+
+.profile-2 {
+  fill: #e0f2fe;
+}
+
+.profile-3 {
+  fill: #a3a3a3;
+}
+
+.profile-4 {
+  fill: #fda4af;
+}
+
+.t-card p:nth-child(2) {
+  color: #5e5e5e;
 }
